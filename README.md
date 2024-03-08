@@ -1,2 +1,0 @@
-# interview
-all important
