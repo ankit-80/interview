@@ -1,9 +1,15 @@
+# Selecting Base OS
+FROM ubuntu                            
 
-FROM ubuntu                             # selecting Base OS
+# Dockerfile Maintainer
+MAINTAINER "ankit@gmail.com"            
 
-MAINTAINER "ankit@gmail.com"             # Dockerfile Maintainer
+# Installing nginx 
+RUN  apt update && apt install nginx -y    
 
-RUN  apt update && apt install nginx -y    # Installing nginx 
+#expose port 80
+EXPOSE 80
 
-CMD ["/usr/sbin/nginx"]                   # Start Nginx
+# Start Nginx
+CMD ["/usr/sbin/nginx"]                  
 
