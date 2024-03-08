@@ -1,0 +1,26 @@
+# Selecting Base OS
+FROM ubuntu                            
+
+# Dockerfile Maintainer
+MAINTAINER "ankit@gmail.com"            
+
+# to set work directory on Ubuntu 
+WORKDIR /ankit/data
+
+# It copy files from Host machine To the Container
+COPY /dockerfile /ankit
+
+#Copy file remotely from URL
+ADD source dest
+
+# run is for run linux command
+RUN  mkdir /batch-22
+RUN touch file-1
+
+
+
+
+
+
+
+               
